@@ -14,6 +14,7 @@ For Assertion i have used Expect library provided by Playwright.Using default [H
 minimum requirement- ```Node.js Version>=18```
 1. Run ```npm i``` command, it will install all required dependancy for this project.
 2. Just run ```npx playwright test``` command and you will see the excution started.
+3. To Run in Headed mode on chromium ```npx playwright test --project chromium --headed```.
 
 
 ![result](/assets/result.png)

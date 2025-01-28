@@ -31,7 +31,7 @@ export default class HighSchoolInformationPage{
     inputFile:Locator=this.page.locator('//span[text()="Upload File"]/ancestor::button/following-sibling::input')
     async selectHighSchoolState(stateName:string){
         await this.highSchoolStateField.click()
-        const ele:Locator=this.page.getByRole('option',{name:stateName})
+        const ele:Locator=this.page.getByRole('option',{name:stateName,exact:true})
         await ele.scrollIntoViewIfNeeded()
         await ele.click()
     }
