@@ -51,7 +51,8 @@ export default class HighSchoolInformationPage{
         let currentUrl:string= this.page.url()
         let newUrl:string=""
         do{
-            await this.nextPageButton.click()
+            const isEnabled:boolean=await this.nextPageButton.isEnabled()
+            if(isEnabled) await this.nextPageButton.click()
             await this.page.waitForTimeout(3000)
             newUrl= this.page.url()
         }while(currentUrl===newUrl)
