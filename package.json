@@ -1,0 +1,26 @@
+{
+  "name": "playwright-ts-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AutomationSangam/playwright-ts-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AutomationSangam/playwright-ts-example/issues"
+  },
+  "homepage": "https://github.com/AutomationSangam/playwright-ts-example#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7",
+    "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0"
+  }
+}
