@@ -49,7 +49,7 @@ export default class ReviewApplicationPage{
         return this.page.locator(`//p[text()="Extracurricular Activity Name"]/following-sibling::p/span[text()="${activityName}"]`)
     }
     getTotalNoOfYearsElement(years:string):Locator{
-        return this.page.locator(`//p[text()="Total Number of Years Involved"]/following-sibling::p[text()="${years}"]`)
+        return this.page.locator(`//p[text()="Total Number of Years Involved"]/following-sibling::p[text()="${years}"]`).first()
     }
     getListAnyLeadershipRoleElement(leadershipRole:string):Locator{
         return this.page.locator(`//p[contains(text(),"List any leadership roles")]/following-sibling::p/span[text()="${leadershipRole}"]`)
